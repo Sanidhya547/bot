@@ -1,0 +1,67 @@
+intents:
+  - botgreet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - info_about_stocks
+  - info_about_stockmarket
+  - info_about_investments
+  - more_info
+
+responses:
+
+  utter_botgreet:
+  - text: "What do you want to know about?"
+
+  utter_stock:
+  - text: "A security representing partial ownership of a corporation and a claim on part of that firm’s earnings and assets. Also known as shares or equity, stocks are issued by companies with a view to raise money for new projects."
+  
+  utter_stockmarket:
+  - text: "The stock market refers to the collection of markets and exchanges where regular activities of buying, selling, and issuance of shares of publicly-held companies takes place."
+  
+  utter_investments:
+  - text: "An investment is an asset or item acquired with the goal of generating income or appreciation. In an economic sense, an investment is the purchase of goods that are not consumed today but are used in the future to create wealth." 
+
+  
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_research:
+  - text: "Sorry,I have to research more."
+
+  utter_information:
+  - text: "Here is the [link](https://www.worldfinance.com/financial-dictionary) to the website which is basically a dictionary of finance"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  actions:
+  - utter_botgreet
+  - utter_stock
+  - utter_stockmarket
+  - utter_investments
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_research
+  - utter_goodbye
+  - utter_iamabot
+  - utter_information
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
